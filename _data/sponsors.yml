@@ -1,0 +1,48 @@
+# Sponsors for the current workshop cycle
+# Update each year — add logo files to /assets/images/sponsors/
+
+diamond:
+  - name: "Sutter Health CPMC"
+    logo: "/assets/images/sponsors/sutter-health.jpg"
+    url: ""
+
+  - name: "American Cancer Society"
+    logo: "/assets/images/sponsors/acs.png"
+    url: "https://www.cancer.org"
+
+gold:
+  - name: "Volpara Health"
+    logo: "/assets/images/sponsors/volpara.png"
+    url: "https://www.volparahealth.com"
+
+silver:
+  - name: "Astrin"
+    logo: "/assets/images/sponsors/astrin.png"
+    url: ""
+
+exhibitors:
+  - name: "Screenpoint Medical"
+    logo: "/assets/images/sponsors/screenpoint.webp"
+    url: ""
+
+  - name: "QHS"
+    logo: "/assets/images/sponsors/qhs.png"
+    url: ""
+
+  - name: "iCAD"
+    logo: "/assets/images/sponsors/icad.jpg"
+    url: "https://www.icadmed.com"
+
+travel_awards:
+  - name: "Friends of UH Cancer Center"
+    logo: "/assets/images/sponsors/friends-uhcc.jpg"
+    url: ""
+
+welcome_gifts:
+  - name: "KCC"
+    logo: "/assets/images/sponsors/kcc.png"
+    url: ""
+
+  - name: "Noms"
+    logo: "/assets/images/sponsors/noms.png"
+    url: ""

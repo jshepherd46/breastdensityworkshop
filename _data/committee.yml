@@ -1,0 +1,36 @@
+directors:
+  - name: "John Shepherd, PhD"
+    title: "Researcher/Professor"
+    institution: "University of Hawaiʻi Cancer Center"
+    photo: "/assets/images/committee/shepherd.jpg"
+
+  - name: "Karla Kerlikowske, MD"
+    title: "Professor"
+    institution: "UC San Francisco School of Medicine"
+    photo: "/assets/images/committee/kerlikowske.jpg"
+
+advisory:
+  - name: "Kimberly Bertrand, ScD"
+    title: "Associate Professor"
+    institution: "Boston University Chobanian & Avedisian School of Medicine"
+    photo: "/assets/images/committee/bertrand.jpg"
+
+  - name: "Per Hall, MD, PhD"
+    title: "Professor/Senior Physician"
+    institution: "Karolinska Institute / Södersjukhuset"
+    photo: "/assets/images/committee/hall.jpg"
+
+  - name: "Fredrik Strand, MD, PhD"
+    title: "Associate Professor of Radiology"
+    institution: "Karolinska Institute"
+    photo: "/assets/images/committee/strand.jpg"
+
+  - name: "Rulla Tamimi, ScD"
+    title: "Division Chief of Epidemiology"
+    institution: "Weill Cornell Medical College"
+    photo: "/assets/images/committee/tamimi.jpg"
+
+  - name: "Celine M. Vachon, PhD"
+    title: "Professor, Epidemiology"
+    institution: "Mayo Clinic Rochester"
+    photo: "/assets/images/committee/vachon.jpg"

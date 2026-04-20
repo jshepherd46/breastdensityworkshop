@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="theme-color" content="#cc3366">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% endif %}
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- SEO Tag plugin -->
+  {% seo %}
+</head>
+<body class="{% if page.url == '/' %}page-home{% else %}page-inner{% endif %}">
+
+{% if site.workshop.registration_open %}
+<div class="announcement">
+  🌺 Registration is now open for the <strong>{{ site.workshop.number }} IBDW</strong> — {{ site.workshop.dates }} in {{ site.workshop.location }}.
+  <a href="/contact/">Register now →</a>
+</div>
+{% endif %}
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-logo" aria-label="IBDW Home">
+      <div class="site-logo__mark" aria-hidden="true">
+        <!-- Ribbon / breast cancer awareness icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C9.5 2 8 4 8 6c0 2.5 2 5 4 7 2-2 4-4.5 4-7 0-2-1.5-4-4-4z"/>
+          <path d="M8 13c-2 1.5-4 3.5-4 6 0 1.7 1.3 3 3 3 1.2 0 2.3-.7 3-1.5"/>
+          <path d="M16 13c2 1.5 4 3.5 4 6 0 1.7-1.3 3-3 3-1.2 0-2.3-.7-3-1.5"/>
+        </svg>
+      </div>
+      <div class="site-logo__text">
+        <span class="site-logo__abbr">IBDW</span>
+        <span class="site-logo__full">International Breast Density Workshop</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" role="navigation" aria-label="Main navigation">
+      {% for item in site.nav %}
+      <a href="{{ item.url }}" {% if page.url == item.url %}class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

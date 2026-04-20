@@ -1,0 +1,112 @@
+---
+layout: default
+title: Sponsors
+description: "IBDW is made possible by the generous support of our industry and academic partners."
+---
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Partners</span>
+    <h1>Sponsors</h1>
+    <p>This workshop is possible due to the financial support from our industry and academic partners. We thank them for their continued commitment to advancing breast cancer research.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- DIAMOND -->
+    <div class="sponsor-tier">
+      <h3>Diamond Sponsors</h3>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.diamond %}
+        <div class="sponsor-logo-wrap diamond">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- GOLD -->
+    <div class="sponsor-tier">
+      <h3>Gold Sponsors</h3>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.gold %}
+        <div class="sponsor-logo-wrap gold">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- SILVER -->
+    <div class="sponsor-tier">
+      <h3>Silver Sponsors</h3>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.silver %}
+        <div class="sponsor-logo-wrap silver">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- EXHIBITORS -->
+    <div class="sponsor-tier">
+      <h3>Exhibitors</h3>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.exhibitors %}
+        <div class="sponsor-logo-wrap exhibitor">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- TRAVEL AWARDS -->
+    <div class="sponsor-tier">
+      <h3>Travel Award Sponsors</h3>
+      <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below sponsors are providing one or more travel awards to either advocates or outstanding young investigators.</p>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.travel_awards %}
+        <div class="sponsor-logo-wrap additional">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- WELCOME GIFTS -->
+    <div class="sponsor-tier">
+      <h3>Welcome Gift Sponsors</h3>
+      <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below local companies are providing welcome gifts to IBDW attendees.</p>
+      <div class="sponsors-logo-grid">
+        {% for sponsor in site.data.sponsors.welcome_gifts %}
+        <div class="sponsor-logo-wrap additional">
+          {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          {% if sponsor.url %}</a>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- BECOME A SPONSOR CTA -->
+    <div style="margin-top: 3rem; padding: 2.5rem; background: var(--pink-light); border-radius: var(--radius-lg); text-align: center;">
+      <h3 style="margin-bottom: 0.75rem; color: var(--pink-dark);">Interested in Sponsoring IBDW?</h3>
+      <p style="color: var(--gray-700); margin-bottom: 1.5rem;">Join our community of partners advancing breast cancer research. Contact us to learn about sponsorship opportunities for the next workshop.</p>
+      <a href="mailto:{{ site.contact_email }}" class="btn btn-primary">Contact Aimee Bowen</a>
+    </div>
+
+  </div>
+</section>

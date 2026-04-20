@@ -1,0 +1,43 @@
+title: "International Breast Density & Cancer Risk Assessment Workshop"
+description: "A distinguished global symposium dedicated to the exploration of breast cancer risk assessment and new advancements in quantitative breast imaging science."
+baseurl: ""
+url: "https://breastdensityworkshop.org"
+
+# Workshop details — update these each cycle
+workshop:
+  number: "12th"
+  dates: "June 2–4, 2027"
+  location: "Maui Island, Hawaiʻi"
+  venue: ""
+  registration_open: false
+  abstract_submission_open: false
+  slides_url: ""  # Link to Google Drive / Dropbox folder for registered attendees
+
+# Contact
+contact_email: "abowen@cc.hawaii.edu"
+
+# Navigation
+nav:
+  - title: "About"
+    url: "/about/"
+  - title: "Organizing Committee"
+    url: "/committee/"
+  - title: "Sponsors"
+    url: "/sponsors/"
+  - title: "Program"
+    url: "/program/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

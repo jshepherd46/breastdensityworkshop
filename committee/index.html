@@ -1,0 +1,53 @@
+---
+layout: default
+title: Organizing Committee
+description: "Meet the Course Directors and Scientific Advisory Committee of the International Breast Density & Cancer Risk Assessment Workshop."
+---
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label">Leadership</span>
+    <h1>Organizing Committee</h1>
+    <p>The experts guiding the scientific direction of IBDW.</p>
+  </div>
+</div>
+
+<!-- COURSE DIRECTORS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Leadership</span>
+      <h2>Course Directors</h2>
+    </div>
+    <div class="committee-grid" style="max-width: 560px; margin: 0 auto;">
+      {% for member in site.data.committee.directors %}
+      <div class="member-card">
+        <img src="{{ member.photo }}" alt="Headshot of {{ member.name }}" onerror="this.src='/assets/images/placeholder-headshot.png'">
+        <div class="member-card__name">{{ member.name }}</div>
+        <div class="member-card__title">{{ member.title }}</div>
+        <div class="member-card__institution">{{ member.institution }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- SCIENTIFIC ADVISORY COMMITTEE -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Advisory</span>
+      <h2>Scientific Advisory Committee</h2>
+    </div>
+    <div class="committee-grid">
+      {% for member in site.data.committee.advisory %}
+      <div class="member-card">
+        <img src="{{ member.photo }}" alt="Headshot of {{ member.name }}" onerror="this.src='/assets/images/placeholder-headshot.png'">
+        <div class="member-card__name">{{ member.name }}</div>
+        <div class="member-card__title">{{ member.title }}</div>
+        <div class="member-card__institution">{{ member.institution }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

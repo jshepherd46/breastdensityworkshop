@@ -1,0 +1,85 @@
+---
+layout: default
+title: About the Workshop
+description: "Learn about the International Breast Density & Cancer Risk Assessment Workshop — its mission, history, and commitment to advancing breast cancer research."
+---
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Story</span>
+    <h1>About the Workshop</h1>
+    <p>A biennial scientific forum dedicated to advancing quantitative breast cancer imaging and risk assessment since 2002.</p>
+  </div>
+</div>
+
+<!-- WHAT IS IBDW -->
+<section class="section">
+  <div class="container" style="max-width: 860px;">
+    <span class="section-label">Overview</span>
+    <h2 style="margin-bottom: 1.5rem;">What is IBDW?</h2>
+    <p>The International Breast Density &amp; Cancer Risk Assessment Workshop (abbreviated to IBDW) is a biennial workshop bringing together experts in quantifying dense breast tissue, image features, and breast cancer risk. The workshop was first held in San Francisco, CA in 2002 and continues in Hawaiʻi since 2019.</p>
+    <p>This workshop features oral presentations from invited speakers and selected proffered abstracts and poster presentations from scientists around the world on cutting edge science pertaining to breast density, quantitative image features and breast cancer risk. Also, testimonials from breast cancer survivors are shared on how breast density and cancer has impacted their lives.</p>
+    <p>Dense breast tissue is known to be one of the strongest risk factors for breast cancer — and breast cancer is the most commonly diagnosed cancer in women in Hawaiʻi and globally. Breast density must be accurately measured and be used in accurate models to identify women at high risk of developing breast cancer. Further, the communication of breast density to women and health care providers is critical so that they can make informed decisions regarding their screening options.</p>
+    <p>The technology and methods to analyze breast images are constantly evolving, especially with the rapid adaptation of machine learning and deep learning. The presentation of advances in technology and breast cancer risk modeling at IBDW brings together a critical mass of researchers to productively share ideas and recent works to advance this important field.</p>
+  </div>
+</section>
+
+<!-- PHOTO -->
+<div style="max-height: 420px; overflow: hidden;">
+  <img src="/assets/images/workshop-photo.jpg" alt="IBDW participants" style="width: 100%; object-fit: cover; max-height: 420px;">
+</div>
+
+<!-- MISSION -->
+<section class="section section--alt">
+  <div class="container" style="max-width: 860px;">
+    <span class="section-label">Mission</span>
+    <h2 style="margin-bottom: 1.5rem;">Our Mission</h2>
+    <p>The goal of IBDW is to explore all aspects of the evolving story of breast cancer risk factors and encourage connections between professionals working in the breast cancer field. Each day of the workshop includes a deep dive into various topics including clinical aspects of breast density, biology, methods of imaging, and using risk factors to predict breast cancer.</p>
+    <p>As an entirely in-person event, attendees are invited to various networking events to connect with their colleagues. Upon moving to Hawaiʻi, the event has also included an emphasis on learning and appreciating Hawaiian culture and its people.</p>
+  </div>
+</section>
+
+<!-- WHY HAWAII -->
+<section class="section">
+  <div class="container" style="max-width: 860px;">
+    <span class="section-label">Location</span>
+    <h2 style="margin-bottom: 1.5rem;">Why Hawaiʻi?</h2>
+    <p>The decision for IBDW to move to Hawaiʻi is primarily influenced by Dr. John Shepherd, one of the workshop chairs, moving to the University of Hawaiʻi Cancer Center in 2018. The UH Cancer Center's efforts in advancing cancer research place significant value on connecting with the community.</p>
+    <p>Workshop participants are encouraged to learn more about the work being done here and to get to know the unique culture and diverse population of the islands. UHCC studies include the Multiethnic Cohort Study and the Hawaiʻi Pacific Mammography Registry, which are making strides in creating more diverse datasets for cancer research.</p>
+    <p>IBDW's focus is on creating a conducive environment for networking and knowledge exchange. The people of Hawaiʻi, who see high rates of breast cancer, can benefit greatly from the insights from workshop attendees. In turn, professionals are introduced to our diverse people and our culture of aloha in the hopes that they return home with these things in mind.</p>
+  </div>
+</section>
+
+<!-- DIVERSITY -->
+<section class="section section--teal">
+  <div class="container" style="max-width: 860px;">
+    <span class="section-label">Commitment</span>
+    <h2 style="margin-bottom: 1.5rem;">Commitment to Diversity</h2>
+    <p>We are committed to fostering a workshop environment where everyone feels welcome, valued, and empowered to contribute. IBDW promotes the participation of individuals from diverse backgrounds, perspectives, and experiences.</p>
+    <p>Our workshop is designed to address the unique challenges and opportunities in breast cancer research across diverse populations. We are proud to feature sessions that explore health disparities, innovative research in underserved communities, and the contributions of minority researchers.</p>
+    <p>If you have feedback on how we can improve our inclusivity, feel free to <a href="/contact/">contact us</a>.</p>
+  </div>
+</section>
+
+<!-- PAST WORKSHOPS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">History</span>
+      <h2>Past Workshops</h2>
+    </div>
+    <div class="workshops-grid">
+      {% for workshop in site.data.workshops %}
+      <div class="workshop-card">
+        <div class="workshop-card__info">
+          <strong>{{ workshop.number }} IBDW</strong>
+          <span>{{ workshop.location }}</span>
+          {% if workshop.dates %}<span style="font-size: 0.75rem; display: block; margin-top: 0.2rem;">{{ workshop.dates }}</span>{% endif %}
+          {% if workshop.slides_url %}<a href="{{ workshop.slides_url }}" style="font-size: 0.75rem; color: var(--pink);" target="_blank">View Slides →</a>{% endif %}
+        </div>
+        <div class="workshop-card__year">{{ workshop.year }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

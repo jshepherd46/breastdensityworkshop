@@ -1,0 +1,27 @@
+# Past workshops — add new entry at the top after each event
+- number: "11th"
+  year: 2025
+  location: "Līhuʻe, HI"
+  venue: "The Royal Sonesta Kauaʻi Resort Lihue"
+  dates: "June 4–6, 2025"
+  slides_url: ""  # Add Google Drive / protected link here
+
+- number: "10th"
+  year: 2023
+  location: "Kailua-Kona, HI"
+  slides_url: ""
+
+- number: "9th"
+  year: 2019
+  location: "Honolulu, HI"
+  slides_url: ""
+
+- number: "8th"
+  year: 2017
+  location: "San Francisco, CA"
+  slides_url: ""
+
+- number: "7th"
+  year: 2015
+  location: "San Francisco, CA"
+  slides_url: ""

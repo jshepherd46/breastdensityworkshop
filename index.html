@@ -176,17 +176,17 @@ og_image: /assets/images/hero-bg.jpg
     <div class="sponsors-logo-grid" style="justify-content: center; margin-bottom: 2rem;">
       {% for sponsor in site.data.sponsors.diamond %}
       <div class="sponsor-logo-wrap diamond">
-        <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+        <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       </div>
       {% endfor %}
       {% for sponsor in site.data.sponsors.gold %}
       <div class="sponsor-logo-wrap gold">
-        <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+        <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       </div>
       {% endfor %}
       {% for sponsor in site.data.sponsors.silver %}
       <div class="sponsor-logo-wrap silver">
-        <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+        <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       </div>
       {% endfor %}
     </div>

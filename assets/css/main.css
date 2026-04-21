@@ -291,7 +291,7 @@ p:last-child { margin-bottom: 0; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('/assets/images/hero-bg.jpg');
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.35;

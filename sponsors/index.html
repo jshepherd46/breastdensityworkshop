@@ -22,7 +22,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.diamond %}
         <div class="sponsor-logo-wrap diamond">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}
@@ -36,7 +36,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.gold %}
         <div class="sponsor-logo-wrap gold">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}
@@ -50,7 +50,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.silver %}
         <div class="sponsor-logo-wrap silver">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}
@@ -64,7 +64,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.exhibitors %}
         <div class="sponsor-logo-wrap exhibitor">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}
@@ -79,7 +79,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.travel_awards %}
         <div class="sponsor-logo-wrap additional">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}
@@ -94,7 +94,7 @@ description: "IBDW is made possible by the generous support of our industry and 
         {% for sponsor in site.data.sponsors.welcome_gifts %}
         <div class="sponsor-logo-wrap additional">
           {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
-          <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+          <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
           {% if sponsor.url %}</a>{% endif %}
         </div>
         {% endfor %}

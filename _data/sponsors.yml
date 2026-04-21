@@ -35,14 +35,12 @@ exhibitors:
 
 travel_awards:
   - name: "Friends of UH Cancer Center"
-    logo: "/assets/images/sponsors/friends-uhcc.jpg"
+    logo: "/assets/images/sponsors/uhcc.png"
     url: ""
 
-welcome_gifts:
-  - name: "KCC"
-    logo: "/assets/images/sponsors/kcc.png"
-    url: ""
-
-  - name: "Noms"
-    logo: "/assets/images/sponsors/noms.png"
-    url: ""
+welcome_gifts: []
+# Add local welcome gift sponsors here once logos are available
+# Example:
+#  - name: "KCC"
+#    logo: "/assets/images/sponsors/kcc.png"
+#    url: ""

@@ -12,36 +12,7 @@ description: "Information about the upcoming IBDW program and access to material
   </div>
 </div>
 
-<!-- UPCOMING -->
-<section class="section">
-  <div class="container" style="max-width: 760px;">
-    <span class="section-label">Upcoming</span>
-    <h2 style="margin-bottom: 1rem;">{{ site.workshop.number }} International Breast Density Workshop</h2>
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-      <div>
-        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Dates</div>
-        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.dates }}</div>
-      </div>
-      <div>
-        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Location</div>
-        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.location }}</div>
-      </div>
-      {% if site.workshop.venue != "" %}
-      <div>
-        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Venue</div>
-        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.venue }}</div>
-      </div>
-      {% endif %}
-    </div>
-
-    <div style="background: var(--gray-100); border-radius: var(--radius-lg); padding: 2rem; text-align: center; margin-bottom: 2.5rem;">
-      <p style="color: var(--gray-500); margin-bottom: 1rem;">Speaker information and registration will be announced here. Join our mailing list to be notified.</p>
-      <a href="{{ site.baseurl }}/contact/" class="btn btn-primary">Join Mailing List</a>
-    </div>
-  </div>
-</section>
-
-<!-- FORMAT INNOVATIONS -->
+<!-- FORMAT INNOVATIONS — moved to lead the page so visitors see what's new about the 12th IBDW first -->
 <section class="section section--alt">
   <div class="container">
     <div class="section-header">
@@ -107,6 +78,35 @@ description: "Information about the upcoming IBDW program and access to material
         <h3>Community Co-Design Lab</h3>
         <p>Patient advocates and community partners co-lead a dedicated session, shaping research priorities from lived experience — moving co-design from aspiration to practice.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING — moved below the format innovations so the mailing-list CTA sits right after the "what's new" pitch -->
+<section class="section">
+  <div class="container" style="max-width: 760px;">
+    <span class="section-label">Upcoming</span>
+    <h2 style="margin-bottom: 1rem;">{{ site.workshop.number }} International Breast Density Workshop</h2>
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+      <div>
+        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Dates</div>
+        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.dates }}</div>
+      </div>
+      <div>
+        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Location</div>
+        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.location }}</div>
+      </div>
+      {% if site.workshop.venue != "" %}
+      <div>
+        <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-500); font-weight: 700; margin-bottom: 0.25rem;">Venue</div>
+        <div style="font-weight: 600; color: var(--gray-900);">{{ site.workshop.venue }}</div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div style="background: var(--gray-100); border-radius: var(--radius-lg); padding: 2rem; text-align: center; margin-bottom: 2.5rem;">
+      <p style="color: var(--gray-500); margin-bottom: 1rem;">Speaker information and registration will be announced here. Join our mailing list to be notified.</p>
+      <a href="{{ site.baseurl }}/contact/" class="btn btn-primary">Join Mailing List</a>
     </div>
   </div>
 </section>

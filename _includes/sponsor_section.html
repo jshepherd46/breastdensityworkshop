@@ -1,0 +1,100 @@
+{%- comment -%}
+  Renders all sponsor tier blocks for a single workshop cycle.
+  Usage: {% include sponsor_section.html cycle="current" %}
+         {% include sponsor_section.html cycle="prior" %}
+  Empty tiers are skipped so we don't show empty headings.
+{%- endcomment -%}
+
+{%- assign cycle = site.data.sponsors[include.cycle] -%}
+
+{% if cycle.diamond and cycle.diamond.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Diamond Sponsors</h3>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.diamond %}
+    <div class="sponsor-logo-wrap diamond">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if cycle.gold and cycle.gold.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Gold Sponsors</h3>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.gold %}
+    <div class="sponsor-logo-wrap gold">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if cycle.silver and cycle.silver.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Silver Sponsors</h3>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.silver %}
+    <div class="sponsor-logo-wrap silver">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if cycle.exhibitors and cycle.exhibitors.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Exhibitors</h3>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.exhibitors %}
+    <div class="sponsor-logo-wrap exhibitor">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if cycle.travel_awards and cycle.travel_awards.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Travel Award Sponsors</h3>
+  <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below sponsors are providing one or more travel awards to either advocates or outstanding young investigators.</p>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.travel_awards %}
+    <div class="sponsor-logo-wrap additional">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if cycle.welcome_gifts and cycle.welcome_gifts.size > 0 %}
+<div class="sponsor-tier">
+  <h3>Welcome Gift Sponsors</h3>
+  <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below local companies are providing welcome gifts to IBDW attendees.</p>
+  <div class="sponsors-logo-grid">
+    {% for sponsor in cycle.welcome_gifts %}
+    <div class="sponsor-logo-wrap additional">
+      {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+      {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

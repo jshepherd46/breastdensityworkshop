@@ -1,46 +1,53 @@
-# Sponsors for the current workshop cycle
-# Update each year — add logo files to /assets/images/sponsors/
+# Sponsors split by workshop cycle.
+#
+# `current:` — sponsors confirmed for the upcoming workshop (12th IBDW, 2027).
+# `prior:`   — sponsors of the most recent past workshop (11th IBDW, 2025),
+#              kept for archival and to communicate continuity with returning
+#              partners.
+#
+# Each tier within a cycle is its own list. To move a sponsor from prior to
+# current (e.g., because they re-upped for the next workshop), cut the entry
+# and paste it into the matching tier under `current:`.
+#
+# Add new logo files to /assets/images/sponsors/ and reference them with the
+# path /assets/images/sponsors/<filename>.
 
-diamond:
-  - name: "Sutter Health CPMC"
-    logo: "/assets/images/sponsors/sutter-health.jpg"
-    url: ""
+current:
+  diamond:
+    - name: "Sutter Health CPMC"
+      logo: "/assets/images/sponsors/sutter-health.jpg"
+      url: ""
 
-  - name: "American Cancer Society"
-    logo: "/assets/images/sponsors/acs.png"
-    url: "https://www.cancer.org"
+  travel_awards:
+    - name: "Friends of UH Cancer Center"
+      logo: "/assets/images/sponsors/uhcc.png"
+      url: ""
 
-gold:
-  - name: "Volpara Health"
-    logo: "/assets/images/sponsors/volpara.png"
-    url: "https://www.volparahealth.com"
+prior:
+  diamond:
+    - name: "American Cancer Society"
+      logo: "/assets/images/sponsors/acs.png"
+      url: "https://www.cancer.org"
 
-silver:
-  - name: "Astrin"
-    logo: "/assets/images/sponsors/astrin.png"
-    url: ""
+  gold:
+    - name: "Volpara Health"
+      logo: "/assets/images/sponsors/volpara.png"
+      url: "https://www.volparahealth.com"
 
-exhibitors:
-  - name: "Screenpoint Medical"
-    logo: "/assets/images/sponsors/screenpoint.webp"
-    url: ""
+  silver:
+    - name: "Astrin"
+      logo: "/assets/images/sponsors/astrin.png"
+      url: ""
 
-  - name: "QHS"
-    logo: "/assets/images/sponsors/qhs.png"
-    url: ""
+  exhibitors:
+    - name: "Screenpoint Medical"
+      logo: "/assets/images/sponsors/screenpoint.webp"
+      url: ""
 
-  - name: "iCAD"
-    logo: "/assets/images/sponsors/icad.jpg"
-    url: "https://www.icadmed.com"
+    - name: "QHS"
+      logo: "/assets/images/sponsors/qhs.png"
+      url: ""
 
-travel_awards:
-  - name: "Friends of UH Cancer Center"
-    logo: "/assets/images/sponsors/uhcc.png"
-    url: ""
-
-welcome_gifts: []
-# Add local welcome gift sponsors here once logos are available
-# Example:
-#  - name: "KCC"
-#    logo: "/assets/images/sponsors/kcc.png"
-#    url: ""
+    - name: "iCAD"
+      logo: "/assets/images/sponsors/icad.jpg"
+      url: "https://www.icadmed.com"

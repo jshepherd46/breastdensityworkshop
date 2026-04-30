@@ -12,7 +12,7 @@
   <h3>Diamond Sponsors</h3>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.diamond %}
-    <div class="sponsor-logo-wrap diamond">
+    <div class="sponsor-logo-wrap diamond{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
@@ -27,7 +27,7 @@
   <h3>Gold Sponsors</h3>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.gold %}
-    <div class="sponsor-logo-wrap gold">
+    <div class="sponsor-logo-wrap gold{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
@@ -42,7 +42,7 @@
   <h3>Silver Sponsors</h3>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.silver %}
-    <div class="sponsor-logo-wrap silver">
+    <div class="sponsor-logo-wrap silver{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
@@ -57,7 +57,7 @@
   <h3>Exhibitors</h3>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.exhibitors %}
-    <div class="sponsor-logo-wrap exhibitor">
+    <div class="sponsor-logo-wrap exhibitor{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
@@ -73,7 +73,7 @@
   <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below sponsors are providing one or more travel awards to either advocates or outstanding young investigators.</p>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.travel_awards %}
-    <div class="sponsor-logo-wrap additional">
+    <div class="sponsor-logo-wrap additional{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}
@@ -89,7 +89,7 @@
   <p style="font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1.5rem;">The below local companies are providing welcome gifts to IBDW attendees.</p>
   <div class="sponsors-logo-grid">
     {% for sponsor in cycle.welcome_gifts %}
-    <div class="sponsor-logo-wrap additional">
+    <div class="sponsor-logo-wrap additional{% if sponsor.dark_bg %} dark-bg{% endif %}">
       {% if sponsor.url and sponsor.url != "" %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener">{% endif %}
       <img src="{{ site.baseurl }}{{ sponsor.logo }}" alt="{{ sponsor.name }}">
       {% if sponsor.url and sponsor.url != "" %}</a>{% endif %}

@@ -22,6 +22,7 @@ current:
     - name: "Friends of UH Cancer Center"
       logo: "/assets/images/sponsors/uhcc.png"
       url: ""
+      dark_bg: true   # logo file is the UHCC "white" variant — needs dark backdrop
 
 prior:
   diamond:

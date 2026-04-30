@@ -674,6 +674,25 @@ p:last-child { margin-bottom: 0; }
   opacity: 1;
 }
 
+/* Dark backdrop for sponsors whose logo file is a white-on-transparent
+   variant (e.g., the official UH Cancer Center "white" logo). Without
+   this, the logo's white pixels are invisible against the section's
+   white background. Triggered by `dark_bg: true` on a sponsor entry
+   in _data/sponsors.yml. */
+.sponsor-logo-wrap.dark-bg {
+  background: var(--gray-900);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponsor-logo-wrap.dark-bg img,
+.sponsor-logo-wrap.dark-bg img:hover {
+  filter: none;
+  opacity: 1;
+}
+
 /* ---- Committee Page ---- */
 .committee-grid {
   display: grid;

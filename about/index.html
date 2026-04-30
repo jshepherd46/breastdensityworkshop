@@ -24,9 +24,19 @@ description: "Learn about the International Breast Density & Cancer Risk Assessm
   </div>
 </section>
 
-<!-- PHOTO -->
-<div style="max-height: 420px; overflow: hidden;">
-  <img src="{{ site.baseurl }}/assets/images/workshop-photo.jpg" alt="IBDW participants" style="width: 100%; object-fit: cover; max-height: 420px;">
+<!-- COLLAGE: a visual band of photos from recent IBDW gatherings, replacing
+     the single workshop-photo.jpg that used to live here. Photos pulled from
+     the legacy WP gallery for 2019 (Honolulu/Oahu) and 2023 (Kona/Big Island).
+     Add a /2025/ row when Kauai photos are available. -->
+<div aria-hidden="false" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px; max-width: 1600px; margin: 0 auto;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC03840.jpg" alt="9th IBDW (Honolulu, 2019) — group gathering" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC04546.jpg" alt="9th IBDW (Honolulu, 2019) — workshop session" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC05092-scaled-1.jpg" alt="9th IBDW (Honolulu, 2019) — networking" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC05524-scaled-1.jpg" alt="9th IBDW (Honolulu, 2019) — Hawaiʻi venue" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2023/20230607_152943-scaled.jpg" alt="10th IBDW (Kona, 2023) — opening day" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2023/DSC06595-scaled.jpg" alt="10th IBDW (Kona, 2023) — workshop session" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2023/DSC06801-scaled.jpg" alt="10th IBDW (Kona, 2023) — networking" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+  <img src="{{ site.baseurl }}/assets/images/workshops/2023/IMG_2305-scaled.jpeg" alt="10th IBDW (Kona, 2023) — Big Island setting" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
 </div>
 
 <!-- MISSION -->
@@ -75,7 +85,8 @@ description: "Learn about the International Breast Density & Cancer Risk Assessm
           <strong>{{ workshop.number }} IBDW</strong>
           <span>{{ workshop.location }}</span>
           {% if workshop.dates %}<span style="font-size: 0.75rem; display: block; margin-top: 0.2rem;">{{ workshop.dates }}</span>{% endif %}
-          {% if workshop.slides_url %}<a href="{{ workshop.slides_url }}" style="font-size: 0.75rem; color: var(--pink);" target="_blank">View Slides →</a>{% endif %}
+          {% if workshop.program_url %}<a href="{{ site.baseurl }}{{ workshop.program_url }}" style="font-size: 0.75rem; color: var(--pink); display: block; margin-top: 0.25rem;" target="_blank" rel="noopener">Program (PDF) ↗</a>{% endif %}
+          {% if workshop.slides_url %}<a href="{{ workshop.slides_url }}" style="font-size: 0.75rem; color: var(--pink); display: block;" target="_blank" rel="noopener">Slides ↗</a>{% endif %}
         </div>
         <div class="workshop-card__year">{{ workshop.year }}</div>
       </div>

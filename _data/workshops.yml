@@ -1,27 +1,52 @@
-# Past workshops — add new entry at the top after each event
+# Past workshops — add new entry at the top after each event.
+#
+# Per entry:
+#   number          required  Ordinal ("11th", "10th", ...)
+#   year            required  Numeric year
+#   location        required  Display location
+#   venue           optional  Specific venue / hotel
+#   dates           optional  e.g. "June 4–6, 2025"
+#   program_url     optional  Path to the workshop's program PDF in this repo
+#                             (under /assets/programs/) or to a public URL.
+#                             Renders as a "Program (PDF)" button.
+#   slides_url      optional  Link to the slide deck collection. Often points
+#                             at a Drive/Dropbox folder with restricted
+#                             access; renders as a "Slides" button.
+#                             When neither program_url nor slides_url is
+#                             set, the page shows "Materials forthcoming"
+#                             rather than an empty card.
+
 - number: "11th"
   year: 2025
   location: "Līhuʻe, HI"
   venue: "The Royal Sonesta Kauaʻi Resort Lihue"
   dates: "June 4–6, 2025"
-  slides_url: ""  # Add Google Drive / protected link here
+  # slides_url: ""  # Pending — slides on the legacy WP site are login-protected;
+                    # plan is to move them to a Drive folder with restricted access
+                    # (see README → Phase 2 IBDW migration notes).
 
 - number: "10th"
   year: 2023
   location: "Kailua-Kona, HI"
-  slides_url: ""
+  venue: "King Kamehameha's Kona Beach Hotel"
+  dates: "June 7–9, 2023"
+  # No public program PDF found on the legacy WP site; only the photo gallery.
 
 - number: "9th"
   year: 2019
   location: "Honolulu, HI"
-  slides_url: ""
+  program_url: "/assets/programs/Program-IBDW-2019.pdf"
 
 - number: "8th"
   year: 2017
   location: "San Francisco, CA"
-  slides_url: ""
+  venue: "Hotel Kabuki"
+  dates: "June 7–9, 2017"
+  program_url: "/assets/programs/Program-IBDW-2017.pdf"
 
 - number: "7th"
   year: 2015
   location: "San Francisco, CA"
-  slides_url: ""
+  venue: "Hotel Kabuki"
+  dates: "June 10–12, 2015"
+  program_url: "/assets/programs/Syllabus-IBDW-2015.pdf"

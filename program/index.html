@@ -130,11 +130,17 @@ description: "Information about the upcoming IBDW program and access to material
           </div>
           <div class="workshop-card__year">{{ workshop.year }}</div>
         </div>
-        {% if workshop.slides_url %}
-        <a href="{{ workshop.slides_url }}" class="btn btn-outline-pink" style="margin-top: 0.75rem; padding: 0.4rem 1rem; font-size: 0.8rem;" target="_blank" rel="noopener">View Slides →</a>
-        {% else %}
-        <span style="font-size: 0.8rem; color: var(--gray-500); margin-top: 0.5rem;">Slides available to registered attendees</span>
+        <div style="margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        {% if workshop.program_url %}
+        <a href="{{ site.baseurl }}{{ workshop.program_url }}" class="btn btn-outline-pink" style="padding: 0.4rem 1rem; font-size: 0.8rem;" target="_blank" rel="noopener">Program (PDF) ↗</a>
         {% endif %}
+        {% if workshop.slides_url %}
+        <a href="{{ workshop.slides_url }}" class="btn btn-outline-pink" style="padding: 0.4rem 1rem; font-size: 0.8rem;" target="_blank" rel="noopener">Slides ↗</a>
+        {% endif %}
+        {% unless workshop.program_url or workshop.slides_url %}
+        <span style="font-size: 0.8rem; color: var(--gray-500);">Materials forthcoming</span>
+        {% endunless %}
+        </div>
       </div>
       {% endfor %}
     </div>

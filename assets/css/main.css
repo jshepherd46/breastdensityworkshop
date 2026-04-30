@@ -35,7 +35,38 @@
 /* ---- Reset & Base ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* Sticky-header offset so anchor jumps don't land focus underneath the header
+     (WCAG 2.4.11 Focus Not Obscured). Header is 70px; 80px adds breathing room. */
+  scroll-padding-top: 80px;
+}
+
+/* ---- Skip-to-content link (WCAG 2.4.1 Bypass Blocks) ----
+   Visually hidden until keyboard-focused, then slides into view at top-left. */
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  z-index: 1000;
+  background: var(--pink);
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom-right-radius: var(--radius);
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--white);
+  outline-offset: -4px;
+  color: var(--white);
+}
+
+/* Programmatically-focused <main> shouldn't show a focus ring */
+main:focus { outline: none; }
 
 body {
   font-family: var(--font-body);
@@ -728,9 +759,11 @@ p:last-child { margin-bottom: 0; }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
+  /* WCAG 1.4.11 Non-text Contrast — keep a visible 2px outline (contrast >7:1
+     against white) instead of hiding it behind a low-alpha box-shadow. */
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
   border-color: var(--pink);
-  box-shadow: 0 0 0 3px rgba(204, 51, 102, 0.1);
 }
 
 .form-group textarea {

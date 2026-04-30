@@ -20,10 +20,15 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
+  <!-- Site JS (mobile nav toggle, etc.) — deferred so it doesn't block rendering -->
+  <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+
   <!-- SEO Tag plugin -->
   {% seo %}
 </head>
 <body class="{% if page.url == '/' %}page-home{% else %}page-inner{% endif %}">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 {% if site.workshop.registration_open %}
 <div class="announcement">

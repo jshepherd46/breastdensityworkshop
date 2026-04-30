@@ -60,8 +60,17 @@ description: "Get in touch with the IBDW organizing team."
         <div style="margin-bottom: 2rem;">
           <div class="section-label" style="margin-bottom: 0.5rem;">Mailing List</div>
           <p style="color: var(--gray-500); font-size: 0.9rem; margin-bottom: 0.75rem;">Join our mailing list to receive updates about registration, abstract submissions, and program announcements.</p>
-          <!-- Mailchimp embed or link -->
-          <a href="#" class="btn btn-outline-pink" style="font-size: 0.85rem;">Subscribe to Updates</a>
+          <!-- Mailchimp embedded signup form for the IBDW audience.
+               Audience ID 51f4454cc3 on us19 datacenter, account
+               breastdensityworkshop. New signups are added immediately;
+               campaigns can be sent once the audience is back below the
+               account's free-tier contact limit. -->
+          <form action="https://breastdensityworkshop.us19.list-manage.com/subscribe/post?u=9148bea16d5e7d0e1d3d49f25&amp;id=51f4454cc3&amp;f_id=00fe8fe4f0" method="POST" target="_blank" novalidate style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding: 0.65rem 0.85rem; border: 1px solid var(--gray-300); border-radius: var(--radius); font: inherit; font-size: 0.9rem;">
+            <!-- Honeypot — Mailchimp convention; do not remove -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9148bea16d5e7d0e1d3d49f25_51f4454cc3" tabindex="-1" value=""></div>
+            <button type="submit" class="btn btn-primary" style="font-size: 0.85rem; align-self: flex-start;">Subscribe to Updates</button>
+          </form>
         </div>
 
         <div>

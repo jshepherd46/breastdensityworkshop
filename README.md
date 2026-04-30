@@ -60,12 +60,16 @@ Place these files in `assets/images/` before launch:
 
 ## Deployment
 
-Push to the `main` branch of your GitHub repo. GitHub Pages builds and deploys automatically within ~1 minute.
+Push to the `main` branch of `shepherd-lab/breastdensityworkshop`. GitHub Pages builds and deploys automatically within ~1 minute.
 
-To connect the custom domain `breastdensityworkshop.org`:
+Currently served at: `https://shepherd-lab.github.io/breastdensityworkshop/` (after the org transfer from `jshepherd46` to `shepherd-lab`).
+
+To connect the custom domain `breastdensityworkshop.org` (Cloudflare + GitHub Pages):
 1. Add a `CNAME` file to this repo containing: `breastdensityworkshop.org`
 2. In GitHub repo Settings → Pages → Custom domain: enter `breastdensityworkshop.org`
-3. Update DNS at SiteGround: add a CNAME record pointing `www` to `yourusername.github.io`, and A records for the apex domain pointing to GitHub's IPs (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
+3. In Cloudflare DNS for `breastdensityworkshop.org`, add A records for apex → GitHub Pages IPs (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`) and CNAME `www` → `shepherd-lab.github.io`. SSL/TLS mode: Full. Proxy: DNS-only (gray cloud) until the Let's Encrypt cert provisions, then optionally enable proxy.
+4. Switch nameservers at the registrar to the two Cloudflare nameservers shown in the Cloudflare dashboard.
+5. Once the GitHub Pages DNS check turns green: enable **Enforce HTTPS**, then change `_config.yml` to `url: "https://breastdensityworkshop.org"` and `baseurl: ""`.
 
 ## Services to configure
 

@@ -22,9 +22,9 @@
   venue: "The Royal Sonesta Kauaʻi Resort Lihue"
   dates: "June 4–6, 2025"
   program_url: "/assets/programs/Program-IBDW-2025.pdf"
-  # slides_url: ""  # Pending — slide decks from the 11th are login-protected on
-                    # the legacy WP site; plan is to move them to a Drive folder
-                    # with restricted access (see Phase 2B in the migration plan).
+  # Per John (Apr 2026): we're not migrating slide decks for past workshops.
+  # Slide hosting will resume for the upcoming 12th IBDW (2027) when that
+  # cycle's materials get published.
 
 - number: "10th"
   year: 2023

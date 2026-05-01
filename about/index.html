@@ -24,19 +24,53 @@ description: "Learn about the International Breast Density & Cancer Risk Assessm
   </div>
 </section>
 
-<!-- COLLAGE: a visual band of photos from recent IBDW gatherings, replacing
-     the single workshop-photo.jpg that used to live here. Photos pulled from
-     the legacy WP gallery for 2019 (Honolulu/Oahu) and 2023 (Kona/Big Island).
-     Add a /2025/ row when Kauai photos are available. -->
-<div aria-hidden="false" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px; max-width: 1600px; margin: 0 auto;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC03840.jpg" alt="9th IBDW (Honolulu, 2019) — group gathering" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC04546.jpg" alt="9th IBDW (Honolulu, 2019) — workshop session" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC05092-scaled-1.jpg" alt="9th IBDW (Honolulu, 2019) — networking" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2019/DSC05524-scaled-1.jpg" alt="9th IBDW (Honolulu, 2019) — Hawaiʻi venue" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2023/20230607_152943-scaled.jpg" alt="10th IBDW (Kona, 2023) — opening day" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2023/DSC06595-scaled.jpg" alt="10th IBDW (Kona, 2023) — workshop session" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2023/DSC06801-scaled.jpg" alt="10th IBDW (Kona, 2023) — networking" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
-  <img src="{{ site.baseurl }}/assets/images/workshops/2023/IMG_2305-scaled.jpeg" alt="10th IBDW (Kona, 2023) — Big Island setting" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+<!-- COLLAGE: curated group photos from each past IBDW, most recent first.
+     The other photos in assets/images/workshops/<year>/ remain in the repo
+     for future use (TODO: a "revolving picture space" component cycling
+     through past-workshop snapshots — see README roadmap). Filenames
+     contain spaces; the src URLs use %20 escaping. -->
+<div style="padding: 2.5rem 1rem; max-width: 1400px; margin: 0 auto;">
+  <div style="text-align: center; margin-bottom: 1.75rem;">
+    <span class="section-label" style="color: var(--gray-500);">From past workshops</span>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <img src="{{ site.baseurl }}/assets/images/workshops/2025/group%20shot%202025.jpg" alt="Group photo from the 11th IBDW in Līhuʻe, Kauaʻi, June 2025" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <figcaption style="text-align: center; margin-top: 0.6rem; font-size: 0.8rem; color: var(--gray-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">11th · Kauaʻi · 2025</figcaption>
+    </figure>
+
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <img src="{{ site.baseurl }}/assets/images/workshops/2023/group%20shot%202023.jpg" alt="Group photo from the 10th IBDW in Kailua-Kona, Hawaiʻi, June 2023" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <figcaption style="text-align: center; margin-top: 0.6rem; font-size: 0.8rem; color: var(--gray-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">10th · Kona · 2023</figcaption>
+    </figure>
+
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <img src="{{ site.baseurl }}/assets/images/workshops/2019/group%20shot%202019.jpg" alt="Group photo from the 9th IBDW in Honolulu, Oʻahu, 2019" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <figcaption style="text-align: center; margin-top: 0.6rem; font-size: 0.8rem; color: var(--gray-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">9th · Honolulu · 2019</figcaption>
+    </figure>
+
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <img src="{{ site.baseurl }}/assets/images/workshops/2017/Group%20Shot%202017.jpg" alt="Group photo from the 8th IBDW at Hotel Kabuki, San Francisco, 2017" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <figcaption style="text-align: center; margin-top: 0.6rem; font-size: 0.8rem; color: var(--gray-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">8th · San Francisco · 2017</figcaption>
+    </figure>
+
+    <figure style="margin: 0;">
+      <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+        <img src="{{ site.baseurl }}/assets/images/workshops/2002/BD%202002%20Workshop%20Group.JPG" alt="Group photo from the founding IBDW in San Francisco, 2002" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <figcaption style="text-align: center; margin-top: 0.6rem; font-size: 0.8rem; color: var(--gray-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">1st · San Francisco · 2002</figcaption>
+    </figure>
+
+  </div>
 </div>
 
 <!-- MISSION -->

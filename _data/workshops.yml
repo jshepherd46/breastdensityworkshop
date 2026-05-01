@@ -21,16 +21,17 @@
   location: "Līhuʻe, HI"
   venue: "The Royal Sonesta Kauaʻi Resort Lihue"
   dates: "June 4–6, 2025"
-  # slides_url: ""  # Pending — slides on the legacy WP site are login-protected;
-                    # plan is to move them to a Drive folder with restricted access
-                    # (see README → Phase 2 IBDW migration notes).
+  program_url: "/assets/programs/Program-IBDW-2025.pdf"
+  # slides_url: ""  # Pending — slide decks from the 11th are login-protected on
+                    # the legacy WP site; plan is to move them to a Drive folder
+                    # with restricted access (see Phase 2B in the migration plan).
 
 - number: "10th"
   year: 2023
   location: "Kailua-Kona, HI"
   venue: "King Kamehameha's Kona Beach Hotel"
   dates: "June 7–9, 2023"
-  # No public program PDF found on the legacy WP site; only the photo gallery.
+  program_url: "/assets/programs/Program-IBDW-2023.pdf"
 
 - number: "9th"
   year: 2019

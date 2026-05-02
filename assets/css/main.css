@@ -221,20 +221,26 @@ p:last-child { margin-bottom: 0; }
 }
 
 .site-logo__mark {
-  width: 42px;
-  height: 42px;
-  background: var(--pink);
-  border-radius: 50%;
+  height: 52px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.site-logo__mark svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
+.site-logo__mark img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* On the dark footer, give the logo a white rounded pad so the
+   image's white canvas blends rather than sitting as a hard rectangle. */
+.site-logo__mark--on-dark {
+  background: white;
+  border-radius: var(--radius);
+  padding: 4px 8px;
 }
 
 .site-logo__text {

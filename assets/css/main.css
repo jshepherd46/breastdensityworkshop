@@ -235,14 +235,6 @@ p:last-child { margin-bottom: 0; }
   display: block;
 }
 
-/* On the dark footer, give the logo a white rounded pad so the
-   image's white canvas blends rather than sitting as a hard rectangle. */
-.site-logo__mark--on-dark {
-  background: white;
-  border-radius: var(--radius);
-  padding: 4px 8px;
-}
-
 .site-logo__text {
   display: flex;
   flex-direction: column;

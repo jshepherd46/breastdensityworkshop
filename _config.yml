@@ -38,5 +38,6 @@ plugins:
 
 exclude:
   - README.md
+  - TODO.md
   - Gemfile
   - Gemfile.lock

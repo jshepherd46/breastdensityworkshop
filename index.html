@@ -258,11 +258,13 @@ og_image: /assets/images/hero-bg.jpg
   <div class="container">
     <h2>Stay Informed</h2>
     <p>Join our mailing list to receive updates about the next IBDW — registration, abstract submissions, and more.</p>
-    <!-- Replace with your Mailchimp embed form action URL -->
-    <form class="mailing-list-form" action="https://hawaii.us1.list-manage.com/subscribe/post" method="POST" target="_blank">
-      <input type="hidden" name="u" value="MAILCHIMP_U_VALUE">
-      <input type="hidden" name="id" value="MAILCHIMP_ID_VALUE">
-      <input type="email" name="EMAIL" placeholder="Your email address" required>
+    <!-- Mailchimp embedded signup form for the IBDW audience.
+         Audience ID 51f4454cc3 on us19 datacenter, account
+         breastdensityworkshop. Same audience as contact/index.html. -->
+    <form class="mailing-list-form" action="https://breastdensityworkshop.us19.list-manage.com/subscribe/post?u=9148bea16d5e7d0e1d3d49f25&amp;id=51f4454cc3&amp;f_id=00fe8fe4f0" method="POST" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+      <!-- Honeypot — Mailchimp convention; do not remove -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9148bea16d5e7d0e1d3d49f25_51f4454cc3" tabindex="-1" value=""></div>
       <button type="submit" class="btn btn-outline">Subscribe</button>
     </form>
   </div>
